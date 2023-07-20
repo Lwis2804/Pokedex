@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3774F22A68E81F005790E6 /* MainManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3774F12A68E81F005790E6 /* MainManagerService.swift */; };
 		AAF559962A66460200FC8529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF559952A66460200FC8529 /* AppDelegate.swift */; };
 		AAF559982A66460200FC8529 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF559972A66460200FC8529 /* SceneDelegate.swift */; };
 		AAF5599A2A66460200FC8529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF559992A66460200FC8529 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA3774F12A68E81F005790E6 /* MainManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainManagerService.swift; sourceTree = "<group>"; };
 		AAF559922A66460200FC8529 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF559952A66460200FC8529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF559972A66460200FC8529 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA3774F02A68E693005790E6 /* MainManagerService */ = {
+			isa = PBXGroup;
+			children = (
+				AA3774F12A68E81F005790E6 /* MainManagerService.swift */,
+			);
+			path = MainManagerService;
+			sourceTree = "<group>";
+		};
 		AAF559892A66460200FC8529 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		AAF559AB2A66464500FC8529 /* Servicios */ = {
 			isa = PBXGroup;
 			children = (
+				AA3774F02A68E693005790E6 /* MainManagerService */,
 			);
 			path = Servicios;
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 				AAF559B62A6647C400FC8529 /* PokemonListTableViewCell.swift in Sources */,
 				AAF559BD2A664A9800FC8529 /* Extension.swift in Sources */,
 				AAF559962A66460200FC8529 /* AppDelegate.swift in Sources */,
+				AA3774F22A68E81F005790E6 /* MainManagerService.swift in Sources */,
 				AAF559B92A66490F00FC8529 /* AllPokemonViewControllerExtesion.swift in Sources */,
 				AAF559AF2A66468D00FC8529 /* AllPokemonViewController.swift in Sources */,
 				AAF559982A66460200FC8529 /* SceneDelegate.swift in Sources */,
