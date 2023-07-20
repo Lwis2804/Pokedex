@@ -20,8 +20,8 @@ extension AllPokemonViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let pokemonCell = tableView.dequeueReusableCell(withIdentifier: PokemonListTableViewCell.identifier, for: indexPath) as? PokemonListTableViewCell ?? PokemonListTableViewCell()
         pokemonCell.pokemonName.text = arrListaPokemon[indexPath.row].pokemon_species?.name
+        //explicar la linea anterior
         return pokemonCell
     }
-    
-    
 }
+
