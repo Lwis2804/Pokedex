@@ -11,6 +11,7 @@ class AllPokemonViewController: UIViewController {
 
     
     var arrPokemonName : [String] = ["Pikachu","Ratata","Meow"]
+    var arrListaPokemon : [Pokemon_entries] = []
     
     
     @IBOutlet weak var pokemonTableList: UITableView!
@@ -23,8 +24,21 @@ class AllPokemonViewController: UIViewController {
         self.pokemonTableList.delegate = self
         self.pokemonTableList.dataSource = self
         self.pokemonTableList.register(PokemonListTableViewCell.nib, forCellReuseIdentifier: PokemonListTableViewCell.identifier)
+        
+        callAllPokemon()
     }
 
+    
+    
+    func callAllPokemon () {
+        var mainService = MainManagerService()
+        mainService.getPokemonList { response, error in
+            if error?.responseCode == nil{
+                self.arrListaPokemon = response?.pokemon_entries ?? []
+                self.pokemonTableList.reloadData()
+            }
+        }
+    }
 
    
 
